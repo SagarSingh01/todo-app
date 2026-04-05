@@ -10,7 +10,7 @@ function Todolist() {
 
     if (inputValue === "" || inputValue === " ") {
         return alert("Enter Input!");
-    } 
+    }
 
     element.innerHTML = `<span onclick="list(event)">${inputValue}</span>
             <div class="input-edit">
@@ -35,7 +35,7 @@ function Edit(e) {
 
 function save(e) {
     let saveVal = e.target.previousElementSibling.value;
-    if(saveVal === "" || saveVal === " ") return alert("Enter Value to Edit");
+    if (saveVal === "" || saveVal === " ") return alert("Enter Value to Edit");
     e.target.parentElement.previousElementSibling.innerHTML = saveVal;
     e.target.parentElement.remove();
 }

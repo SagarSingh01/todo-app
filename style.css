@@ -10,8 +10,24 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Segoe UI", sans-serif;
-    background: linear-gradient(#6a11cb, #2575fc);
+    background: radial-gradient(circle at top left, #7f00ff, #0d4ab5, #00c6ff);
+    background-size: 300% 300%;
+    animation: radialGradientAnimation 15s ease infinite;
     padding: 1.5rem;
+}
+
+@keyframes radialGradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 /* =====================
@@ -58,7 +74,7 @@ body {
     text-align: center;
     border: none;
     outline: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     background: rgba(255, 255, 255, 0.15);
     color: white;
     transition: 0.34s;
@@ -76,7 +92,7 @@ body {
 
 .input-container button {
     padding: 0.8rem 1.2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: 8px;
     border: none;
     background: linear-gradient(#057ae1, #00f2fe);
@@ -152,7 +168,9 @@ body {
 }
 
 .input-edit input {
-    padding: 0.4rem 0.6rem;
+    padding: 0.4rem;
+    text-align: center;
+    font-size: 1.2rem;
     border-radius: 6px;
     border: none;
     outline: none;
