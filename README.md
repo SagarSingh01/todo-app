@@ -26,7 +26,7 @@ It helps users add, edit, and manage daily tasks in a clean and interactive inte
 
 ## 🔗 Live Demo
 
-🚀 [https://your-live-link-here.com](https://sagarsingh01.github.io/todo-app/)  
+🚀 https://sagarsingh01.github.io/todo-app/
 
 ---
 
