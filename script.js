@@ -4,8 +4,7 @@ function list(e) {
     e.target.parentElement.classList.toggle("list-check");
 }
 
-function Todolist(e) {
-    if (e.key === "Enter") {
+function Todolist() {
         let inputValue = document.querySelector(".input-container>input").value;
         let element = document.createElement("li");
 
@@ -24,7 +23,6 @@ function Todolist(e) {
             </div>`;
         document.querySelector(".list-container").append(element);
         document.querySelector(".input-container>input").value = "";
-    }
 }
 
 function removeList(e) {
@@ -41,3 +39,9 @@ function save(e) {
     e.target.parentElement.previousElementSibling.innerHTML = saveVal;
     e.target.parentElement.remove();
 }
+
+document.addEventListener("keydown" , (e) => {
+    if(e.key === "Enter") {
+        Todolist();
+    }
+})
