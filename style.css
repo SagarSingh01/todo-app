@@ -30,6 +30,12 @@ body {
     }
 }
 
+@media (max-width : 500px) {
+    body {
+        overflow-y: hidden;
+    }
+}
+
 /* =====================
    Main Todo Card
 ===================== */
